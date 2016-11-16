@@ -55,7 +55,7 @@ function conditional_clear() {
 # Calcula la ultima revision
 function checkupdatess {
 	
-	revision_online="$(timeout -s SIGTERM 20 curl -L "https://raw.githubusercontent.com/Infamous-devel/linset/master/linset" 2>/dev/null| grep "^revision" | cut -d "=" -f2)"
+	revision_online="$(timeout -s SIGTERM 20 curl -L "https://raw.githubusercontent.com/Infamous-devel/Pwninset/master/linset" 2>/dev/null| grep "^revision" | cut -d "=" -f2)"
 	if [ -z "$revision_online" ]; then
 		echo "?">$DUMP_PATH/Irev
 	else
@@ -446,12 +446,12 @@ fi
 if [ $LINSET_DEBUG != 1 ]; then
 	
 	echo "" 
-	sleep 0.1 && echo -e $rojo "      _____  _  _____   ____  _      _  ____  _____  _      _  "
-	sleep 0.1 && echo -e $rojo "     |  ___|| ||     \/  ___|| | /\ | |/    \|     \| \    / | "                     
-	sleep 0.1 && echo -e $rojo "     | |__  | ||  D  /| |___ | |/  \| || /\ ||  D  /|  \  /  | "
-	sleep 0.1 && echo -e $rojo "     |  __| | ||  __/ |  ___||   /\   || || ||  __/ |   \/ | | "
-	sleep 0.1 && echo -e $rojo "     | |    | ||  _ \ | |___ |  /  \  || \/ ||  _ \ | |\  /| | "
-	sleep 0.1 && echo -e $rojo "     |_|    |_||_| |_|\_____||_/    \_|\____/|_| |_||_| \/ |_| "
+	sleep 0.1 && echo -e $rojo "______ _    _ _   _ _____ _   _  _____ _____ _____ "
+	sleep 0.1 && echo -e $rojo "| ___ \ |  | | \ | |_   _| \ | |/  ___|  ___|_   _|"                     
+	sleep 0.1 && echo -e $rojo "| |_/ / |  | |  \| | | | |  \| |\  \'--.| |__   | |  "
+	sleep 0.1 && echo -e $rojo "|  __/| |/\| | . \' | | | | . \' | \'--. \  __|  | |  "
+	sleep 0.1 && echo -e $rojo "| |   \  /\  / |\  |_| |_| |\  |/\__/ / |___  | |  "
+	sleep 0.1 && echo -e $rojo "\_|    \/  \/\_| \_/\___/\_| \_/\____/\____/  \_/  "
 	sleep 0.1 && echo ""
 	sleep 0.1 && echo ""
 	sleep 0.1 && echo -e $amarillo "           _       ______  ___ "$blanco"   __"$amarillo" ___  "$verde"    __  __           __"
@@ -462,9 +462,11 @@ if [ $LINSET_DEBUG != 1 ]; then
 	sleep 0.1 && echo ""
 	sleep 0.1 && echo ""
 	sleep 1
-	echo -e $rojo"                     LINSET "$blanco""$version" (rev. "$verde"$revision"$blanco") "$amarillo"by "$blanco" vk496"
+	echo -e $rojo"                     PWNINSET (LINSET) "$blanco""$version" (rev. "$verde"$revision"$blanco") "$amarillo"by "$blanco" vk496 and Infamous-devel.Infa"
 	sleep 1
-	echo -e $verde"                        Para "$rojo"seguridadwireless.net "$rescolor
+	echo -e $verde"                        Original para "$rojo"seguridadwireless.net "$rescolor
+	sleep 1
+	echo -e $verde"                        Pwninset para "$rojo"Antxon Magoa "$rescolor
 	sleep 1
 	echo -n "                              Latest rev."
 	tput civis
