@@ -1,0 +1,23 @@
+#################################################################
+#                                                               #
+# # -*- ENCODING: UTF-8 -*-                                     #
+# Este script es software libre. Puede redistribuirlo y/o       #
+# modificar-lo bajo los términos de la Licencia Pública General #
+# de GNU según es publicada por la Free Software Foundation,    #
+# bien de la versión 3 de dicha Licencia o bien (según su       #
+# elección) de cualquier versión posterior.                     #
+#                                                               #
+# Si usted hace alguna modificación en esta aplicación,         #
+# deberá siempre mencionar al autor original de la misma.       #
+#                                                               #
+# Autor: Script creado por vk496 modificado por Infamous-devel  #
+#                                                               #
+# Integra funciones de Airoscript-ng                            #
+# Funcion Seleccion Objetivo de Handshaker                      #
+# Intro tomada de ONO Netgear WPA2 Hack                         #
+#                                                               #
+# Un Saludo                                                     # 
+#                                                               #
+#################################################################
+
+
